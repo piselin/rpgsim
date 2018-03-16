@@ -21,14 +21,13 @@ public class Printer extends AbstractActor {
     private LoggingAdapter log = Logging.getLogger(getContext().system(), this);
 
     private Printer() {
-
     }
+
+
     @Override
     public Receive createReceive() {
         return receiveBuilder()
-                .match(Greeting.class, greeting -> {
-                    log.info(greeting.message);
-                })
+                .match(Greeting.class, greeting -> log.info(greeting.message))
                 .build();
     }
 }
