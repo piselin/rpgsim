@@ -6,6 +6,9 @@ import actorBench.Greeter.*;
 
 import java.io.IOException;
 
+/**
+ * Source https://developer.lightbend.com/guides/akka-quickstart-java/full-example.html
+ */
 public class HelloActorWorld {
 
     public static void main(String[] args) {
